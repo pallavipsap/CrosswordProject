@@ -38,10 +38,10 @@ const IN_PROD = NODE_ENV === 'production' // true in production, false in develo
 // ]
 
 
-//mongodb+srv://pal:yTwbXMBeofkjoOda@cluster0.vjeeh.mongodb.net/<dbname>?retryWrites=true&w=majority
+
 
 // use this link in heroku app
-//mongodb+srv://pal:yTwbXMBeofkjoOda@cluster0.vjeeh.mongodb.net/crossword?retryWrites=true&w=majority
+
 var app = express();
 
 // initially, session contains only the cookie no data

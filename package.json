@@ -1,0 +1,30 @@
+{
+  "name": "crosswordproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.js",
+  "scripts": {
+    "test": "node login.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallavipsap/CrosswordProject.git"
+  },
+  "author": "Pallavi Sapale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallavipsap/CrosswordProject/issues"
+  },
+  "homepage": "https://github.com/pallavipsap/CrosswordProject#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.4",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.6"
+  }
+}
