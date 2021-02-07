@@ -38,8 +38,6 @@ const IN_PROD = NODE_ENV === 'production' // true in production, false in develo
 // ]
 
 
-
-
 // use this link in heroku app
 
 var app = express();
@@ -53,7 +51,7 @@ app.use(session({
   secret : SESS_SECRET, // secret used to sign the session ID cookie. signature will be based on content of cookie, if content of cookie is modified they will no longer match the signature of the cookie
   store: new MongoStore({
     client : MongoClient,
-    url : process.env.MONGODB_URI ||'mongodb://localhost:27017/',
+    url : process.env.MONGODB_URI, //||'mongodb://localhost:27017/',
     ttl : SESS_LIFETIME
   }),
   cookie : { // by default http only
