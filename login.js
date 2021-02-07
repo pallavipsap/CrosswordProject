@@ -19,7 +19,7 @@ var BCRYPT_SALT_ROUNDS = 12;
 const TWO_HOURS = 1000 * 60 * 60 * 2 // in milliseconds
 
 const{
-  PORT = 2000,
+  //PORT = 2000,
   NODE_ENV = 'development',
   SESS_NAME = 'sid',
   SESS_LIFETIME = TWO_HOURS, // milliseconds, by default : cookie will expire when browser is closed
