@@ -1,0 +1,106 @@
+body {
+	
+	margin: 0;
+	padding : 0;
+	background : url(osuBackground.jpg);
+	background-size : cover;
+	background-position: center;
+	font-family : sans-serif;
+}
+
+/*class in index.html*/
+.studentdetails{
+	width : 320px;
+	height: 420px;
+	/* black */
+	background: white; 
+	/* #light shade of grey */
+	color: black; 
+	top: 50%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing : border-box;
+	/* good = to adjust "login here: position */
+	padding-top: 70px;
+	padding-left: 10px;
+} 
+
+/* styling username*/
+.studentdetails p{
+	margin:0;
+	padding:0;
+	font-weight: bold;
+	font-size: 15px;
+	width: 100%;
+}
+
+/* radio buttons, login, placeholder */
+/* .studentdetails input{
+	width: 80%;
+	margin-bottom: 10px;
+	height: 2em;
+	font-size: 15px;
+	
+} */
+
+.studentdetails input[type="text"],input[type="text"]
+{
+	border:none;
+	border-bottom:1px solid #fff; /*to remove the white background for code*/
+	background: transparent;
+	outline: none;
+	height : 50 px;
+	
+}
+
+.studentdetails input[type="radio"] :checked::after{
+	border:none;
+	/* padding-right: 50px; */
+	margin: 1px;
+	background-color: orangered;
+	visibility: visible;
+}
+
+.studentdetails input[type="submit"]{
+	border:none;
+	/* padding-right: 50px; */
+	margin: 1px;
+	text-align: center;
+	height: 20px;
+}
+
+label {
+	margin: 1px;
+}
+
+
+/* .studentdetails div {
+
+} */
+
+
+/*styling login.png*/
+.login{
+	width : 100px;
+	height : 100px;
+	/* remove white part */
+	border-radius:50%; 
+	position : absolute; 
+	/* shifting it up */
+	top : -50px; 
+	left:calc(50% - 50px);
+	
+} 
+
+
+/*styling login here*/
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:24px;
+	height: 30px;
+	
+}
+

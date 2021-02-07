@@ -1,0 +1,144 @@
+nav /*navigation bar on top*/
+{
+	background-color: #5CACEE;
+	text-align: center;
+	height: 40px;
+}
+nav a /*links in nav bar*/
+{
+	display: inline-block;
+	line-height: 35px;/*to adjust text position*/
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none; /*to remove unerline*/
+	font-size: 120%;
+	height: 100%;
+	width: 100px;
+	margin: auto;
+}
+nav span
+{
+	/*display: inline-block;*/
+	line-height: 35px;/*to adjust text position*/
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none; /*to remove unerline*/
+	font-size: 120%;
+	height: 100%;
+	width: 100px;
+	margin: auto;
+}
+#logout /*logout button*/
+{
+	display: inline-block;
+	float: right;
+}
+#home /*home button*/
+{
+	display: inline-block;
+	float: left;
+}
+#tutorial/*tut button*/
+{
+	display: inline-block;
+	float: left;
+}
+
+/*respective hovering animation*/
+
+#logout:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+#home:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+#tutorial:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+p
+{
+	text-align: center;
+	font-size: 160%;
+}
+#new_grp,#creategroup_dialog
+{
+	text-align: center;
+	margin: auto;
+	width: 60%; 
+	padding: 10px;
+	
+}
+#new
+{
+	height: 40px;
+	width: 300px;
+	margin-bottom: 10px;
+	background-color:  #5CACEE;
+	border-radius: 3px;
+	font-size: 140%;
+	border: none;
+	color: #ffffff;
+}
+#new:hover
+{
+background-color: rgba(92,172,238,0.65);
+}
+button:hover
+{
+background-color: rgba(92,172,238,0.65);
+}
+#creategroup_dialog input
+{
+	height: 30px;
+	width: 175px;
+	font-size: 80%;
+}
+button
+{
+	margin-top: 10px;
+	height: 30px;
+	width: 175px;
+	margin-bottom: 10px;
+	background-color:  #5CACEE;
+	border-radius: 3px;
+	font-size: 140%;
+	border: none;
+	color: #ffffff;
+}
+span
+{
+	text-align: center;
+	color: red;
+}
+#exist
+{
+	width: 100%;
+	background-color: #5CACEE;
+	color: #ffffff;
+}
+#allgroups a
+{
+	display: inline-block;
+	border: 1px solid grey;
+	width: 100%;
+	height: 30px;
+	/*border-bottom: none;*/
+	color: black;
+	text-decoration: none;
+	font-size: 110%;
+	text-align: center;
+	border-radius: 3px;
+	margin-bottom: 2px;
+}
+#allgroups a:last-child
+{
+	border-bottom: 1px solid grey;
+
+}
+#allgroups a:hover
+{
+	background-color: #f2f2f2;
+}

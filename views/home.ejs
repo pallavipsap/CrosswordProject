@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Home Page </title>
+<!-- this -->
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+
+<body>
+
+	<nav>
+		<span id = "username"></span>
+		<a id="home" href="/home">Home</a>
+		<a id="tutorial" href="">Tutorial</a>
+		<a id="logout" href="/logout" action = "/logout">Logout</a>
+	</nav>
+
+    <!-- teacher route : query string-->
+    <!-- <form id = "postCreateGroups" method="GET" action="/get-home-data/post-create-groups/:todo"></form>  -->
+    <!-- student route : query string-->
+	<form id = "postPlayGroups" method="GET" action="/post-play-groups"></form>
+	<!-- <form id = "logout" method = 'GET' action = '/logout'> -->
+	
+	<!-- logout route : query string-->
+	<!-- <form id = "postPlayGroups" method="POST" action="/post-play-groups"></form> -->
+
+    <textarea name = "userdata" id = "userdata_json"><%- JSON.stringify(data) %></textarea>
+	<p id = "welcomemessage"></p>
+	<!-- <% var ejs_variable = JSON.stringify(data); %> -->
+
+    <div>
+        <!-- <input type="submit" value="Create Crossword" onClick = "window.location.href = './get-home-data/post-create-groups/create'"> -->
+		<!-- <input type="submit" value="Play Crossword" onClick ="window.location= 'http://localhost:2000/home/get-home-data/post-create-groups/create'"> -->
+
+
+		<a href="/home/create" action = "/home/create">Create New Crosswords</a>
+		<br>
+		<a href="/home/create" action = "/home/create">Go to my Created Crosswords</a>
+		<br>
+		<a href="/home/play" action = "/home/play">Go to my Played Crosswords</a>
+		<!-- <a href="/play" action = "/play">Create Crossword</a> -->
+		
+		<!-- go to logout route -->
+		<!-- <button type="submit" form = "logout">Logout</button> -->
+		<!-- <a href="/logout" action = "/logout">Logout</a> -->
+    </div>
+
+    <script>
+		var json_object = <%- JSON.stringify(data) %>;
+		console.log(json_object)
+		document.getElementById("username").innerHTML = "Cross-Build-Play"
+		document.getElementById("welcomemessage").innerHTML = "Welcome, " + json_object.username + "! what do you want to choose today?";
+    </script>
+
+</body>
+
+
+</html>

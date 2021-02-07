@@ -1,0 +1,64 @@
+
+/* div.addRow{
+    line-height: 45px;
+    background-color: #fff;
+    padding-left: 10px;
+    border-bottom: 1px solid;
+    border-top: 1px solid #e5e5e5;} */
+    /*font: 90%/1.45em "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;*/
+
+    /* body {
+        
+        margin: 0;
+        padding: 0;
+        color: black; 
+        background-color: #fff;
+    } */
+
+    /* search bar in center */
+    .dataTables_wrapper .dataTables_length {
+        /* width:100%; */
+        text-align:center;
+        padding-bottom: 1%;
+        padding-left: 10%;
+    }
+
+     .dataTables_wrapper .dataTables_filter {
+        /* width:100%; */
+        text-align:center;
+        padding-bottom: 1%;
+        padding-right: 10%;
+        
+    }
+
+    .dataTables_wrapper .dataTables_info{
+        /* width:100%;
+        text-align:center;
+        padding-bottom: 1%; */
+        padding-left: 10%;
+        
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+
+        padding-right: 10%;
+    }
+
+    /* .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+
+        color:brown;
+      
+    } */
+
+    /* table header color */
+
+    table.dataTable thead tr {
+        background-color: #5CACEE;
+    } 
+
+    /* .dataTables_wrapper .dataTables_paginate .paginate_button:active {
+  background: none;
+  color: black;
+  float :inline-end
+} */
+

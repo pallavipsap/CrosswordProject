@@ -1,0 +1,60 @@
+h1
+{
+	text-align: center;
+	font-size: 250%; 
+}
+span
+{
+	text-align: center;
+	color: red;
+}
+form
+{
+	text-align: center;
+}
+p
+{
+	text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+}
+input /*input boxes of username , password*/
+{
+	height: 40px;
+	width: 350px;
+	margin-bottom: 10px;
+	background-color: #FAFAFA;
+	border: 1px solid grey;
+	border-radius: 3px;
+
+}
+#signup/*signup button*/
+{
+	height: 35px;
+	color: #ffffff;
+	background-color: #5CACEE;
+	border: none;
+	border-radius: 3px;
+	font-size: 110%;
+
+}
+a /*sign up link*/
+{
+	text-decoration: none;
+	font-size: 105%;
+	color: #5CACEE;
+	font-weight: bold;
+}
+div /*the box around everything*/
+{
+
+	margin: auto;
+	width: 30%;
+	border: 1px solid grey;
+	padding: 10px;
+	margin-top: 140px; /*to bring the box down from top*/
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+body
+{
+  background-color: #FAFAFA	 ; /*bg color of whole pg*/

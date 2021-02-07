@@ -1,0 +1,98 @@
+nav /*navigation bar on top*/
+{
+	background-color: #5CACEE;
+	text-align: center;
+	height: 40px;
+}
+
+nav span
+{
+	/*display: inline-block;*/
+	line-height: 35px;/*to adjust text position*/
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none; /*to remove unerline*/
+	font-size: 120%;
+	height: 100%;
+	width: 100px;
+	margin: auto;
+}
+
+nav a /*links in nav bar*/
+{
+	display: inline-block;
+	line-height: 35px;/*to adjust text position*/
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none; /*to remove unerline*/
+	font-size: 120%;
+	height: 100%;
+	width: 100px;
+	margin: auto;
+}
+#logout /*logout button*/
+{
+	display: inline-block;
+	float: right;
+}
+#home /*home button*/
+{
+	display: inline-block;
+	float: left;
+}
+#tutorial/*tut button*/
+{
+	display: inline-block;
+	float: left;
+}
+
+/*respective hovering animation*/
+
+#logout:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+#home:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+#tutorial:hover
+{
+	background-color: rgba(256,256,256,0.35);
+}
+#create:hover
+{
+	background-color: rgba(92,172,238,0.65); /*same as nav bar color only in decimal form and last value is of opacity*/
+}
+#played:hover
+{
+	background-color: rgba(92,172,238,0.65);
+}
+p
+{
+	text-align: center;
+	font-size: 160%;
+}
+div /*all these 4 commands are required to bring 'div' in center*/
+{
+	text-align: center;
+	margin: auto;
+	width: 30%; 
+	padding: 10px;
+}
+div a
+{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	height: 40px;
+	width: 350px;
+	margin-bottom: 10px;
+	background-color: #5CACEE;
+	color: #ffffff;
+	font-size: 120%;
+	line-height: 35px;
+	border-radius: 3px;
+
+
+}
