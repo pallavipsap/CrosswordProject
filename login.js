@@ -51,14 +51,13 @@ app.use(session({
   secret : SESS_SECRET, // secret used to sign the session ID cookie. signature will be based on content of cookie, if content of cookie is modified they will no longer match the signature of the cookie
   store: new MongoStore({
     client : MongoClient,
-    url : process.env.MONGODB_URI, //||'mongodb://localhost:27017/',
+    url : process.env.MONGODB_URI ||'mongodb://localhost:27017/',
     ttl : SESS_LIFETIME
   }),
   cookie : { // by default http only
     maxAge: SESS_LIFETIME, // after which the cookie expires , to use when calculating the Expires Set-Cookie attribute
     sameSite: true, // true will set the SameSite attribute to Strict for strict same site enforcement
-    secure: IN_PROD // true only in production mode, false in development mode
-    
+    secure: IN_PROD // true only in production mode, false in development mode  
   }
 }
 ))
