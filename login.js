@@ -1,19 +1,18 @@
 var express = require('express');
-//const router = express.Router()
 const session = require('express-session');
 var path = require('path');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
-var PORT = 2000;
 var MongoClient = mongodb.MongoClient;
 var ejs = require('ejs');
 var ObjectID = require('mongodb').ObjectID;
 const MongoStore = require('connect-mongo')(session);
 const { v4: uuidv4 } = require('uuid');
-// const { resolve } = require('path');
-// const { func } = require('prop-types');
 var bcrypt = require('bcrypt');
 var BCRYPT_SALT_ROUNDS = 12;
+var PORT = 2000;
+// const { resolve } = require('path');
+// const { func } = require('prop-types');
 //const router = express.Router()
 
 const TWO_HOURS = 1000 * 60 * 60 * 2 // in milliseconds
@@ -280,6 +279,7 @@ app.get('/', (req, res) => {
     console.log("I am logged in, give me next route")
   }
   else {
+    console.log("Sessions have not started")
     res.redirect('/login/?url=blank'); // if not logged in go to get method
   }
 });
