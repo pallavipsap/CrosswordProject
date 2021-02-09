@@ -243,6 +243,7 @@ const redirectHome = (req,res, next) =>{
     res.redirect('/home'); // if authenticated, go to home page
   }
   else{
+    console.log("In redirect home, to check if logged in or not, Sessions have not started")
     next() // if not authenticated, proceed with normal cycle
   }
 }
@@ -279,7 +280,7 @@ app.get('/', (req, res) => {
     console.log("I am logged in, give me next route")
   }
   else {
-    console.log("Sessions have not started")
+    console.log("In / route Sessions have not started")
     res.redirect('/login/?url=blank'); // if not logged in go to get method
   }
 });
